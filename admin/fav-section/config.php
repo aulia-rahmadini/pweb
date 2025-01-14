@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$dbname = 'awl';
+$dbname = 'pweb';
 $username = 'root';
 $password = '';
 

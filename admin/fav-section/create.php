@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $targetFile = $targetDir . basename($image['name']);
         move_uploaded_file($image['tmp_name'], $targetFile);
 
-        $sql = "INSERT INTO products_menu1 (name, image) VALUES (:name, :image)";
+        $sql = "INSERT INTO picture (name, image) VALUES (:name, :image)";
         $stmt = $conn->prepare($sql);
         $stmt->execute([
             'name' => $name,
@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <title>Create Menu1</title>
 </head>
 <body>
-    <h1>Add New Product</h1>
+    <h1 >Add New Product</h1>
     <form method="POST" enctype="multipart/form-data">
         <label>Product Name:</label><br>
         <input type="text" name="name" required><br><br>

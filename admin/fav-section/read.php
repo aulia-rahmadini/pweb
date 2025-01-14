@@ -1,7 +1,7 @@
 <?php
 include 'config.php';
 
-$sql = "SELECT * FROM products_menu1";
+$sql = "SELECT * FROM picture";
 $stmt = $conn->prepare($sql);
 $stmt->execute();
 $products = $stmt->fetchAll(PDO::FETCH_ASSOC);

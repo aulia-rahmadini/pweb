@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>DNA Salmon</title>
+
+    <style>
+      body {
+        font-family: "League Spartan", sans-serif;
+      }
+      .transition-height {
+        transition: height 0.3s ease-in-out;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="bg-white" id="Dashboard">
+      <div class="container mx-auto" id="dashboard">
+        <img
+          src="../picts/logocloude.jpg"
+          alt="logo"
+          class="w-[120px] h-[120px] mx-auto"
+        />
+        <div class="w-fit mx-auto">
+          <ul class="flex gap-[150px]">
+            <li>
+              <a href="http://localhost/pweb/page/index.php"> Dashboard </a>
+            </li>
+            <li>
+              <p>|</p>
+            </li>
+            <li>
+              <a href="http://localhost/pweb/page/treatment.html">Treatment</a>
+            </li>
+            <li>
+              <p>|</p>
+            </li>
+            <li>
+              <a href="http://localhost/pweb/page/skincare.html">Skincare</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- DNA Salmon -->
+    <div>
+      <div class="bg-[#FFDFE9] mx-auto py-4 mb-4 mt-2">
+        <h1
+          class="ml-10 font-semibold text-[30px] text-gray-800 text-center pt-2"
+        >
+          DNA SALMON TREATMENT
+        </h1>
+      </div>
+    </div>
+    <img src="../picts/dnasalmon.png" alt="dashboard" class="mb-2" />
+    <div class="container mx-auto p-4 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Kotak Kiri -->
+      <div class="bg-white p-6 rounded-xl shadow-lg">
+        <h2 class="text-xl font-bold text-gray-800 mb-4">Suntik DNA Salmon</h2>
+        <p class="text-sm text-gray-600 mb-1 pr-5">
+          Suntik DNA salmon adalah tindakan medis yang dilakukan dengan cara
+          menyuntikkan serum atau ekstrak DNA ikan salmon ke bawah permukaan
+          kulit. Pada dasarnya, ekstrak DNA ikan salmon tersebut diambil dari
+          sperma ikan salmon yang mengandung berbagai bahan aktif, seperti
+          hyaluronic acid murni dan polinukleotida.
+        </p>
+        <div class="mt-4 flex justify-center">
+          <a
+            role="button"
+            href="#"
+            class="mb-0 mt-1 text-gray-800 bg-gray-200 hover:bg-gray-300 px-4 py-3 rounded-md flex justify-center font-semibold"
+          >
+            Sekarang
+          </a>
+        </div>
+      </div>
+      <!-- Kotak Kanan -->
+      <div class="bg-white p-6 rounded-xl shadow-lg">
+        <h2 class="text-xl font-bold text-gray-800 mb-4">
+          Manfaat Injeksi DNA Salmon
+        </h2>
+        <ul class="list-disc list-inside text-sm text-gray-600 space-y-2">
+          <li>
+            Mengurangi tanda penuaan dini dengan melembapkan, mencerahkan, dan
+            meningkatkan elastisitas kulit.
+          </li>
+          <li>
+            Melindungi kulit dari radiasi UV dengan mengaktifkan protein p53
+            untuk perbaikan DNA.
+          </li>
+          <li>
+            Merangsang regenerasi sel kulit, memproduksi kolagen, dan
+            menyamarkan bekas luka.
+          </li>
+          <li>
+            Mengatasi masalah kulit seperti kulit kering, iritasi, dan jerawat.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-[#FFBFD3] text-gray-800">
+      <div class="container mx-auto py-14 px-6">
+        <div class="grid grid-cols-4 gap-10 justify-items-center">
+          <div>
+            <a href="#dashboard">
+              <img
+                src="../picts/logos.png"
+                alt="logo-footer"
+                class="h-[60px] mb-10"
+              />
+            </a>
+
+            <div>
+              <p>Copyright © 2025</p>
+              <p>Cloude All Rights Reserved</p>
+            </div>
+          </div>
+          <div>
+            <h3 class="font-semibold text-xl mb-4">About Us</h3>
+            <ul>
+              <li class="mb-4">
+                <p>Back Story</p>
+              </li>
+              <li class="mb-4">
+                <p>Our Location</p>
+              </li>
+              <li class="mb-4">
+                <p>Our Team</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold text-xl mb-4">Products</h3>
+            <ul>
+              <li class="mb-4">
+                <a href="http://localhost/pweb/page/treatment.html"
+                  >Treatment</a
+                >
+              </li>
+              <li class="mb-4">
+                <a href="http://localhost/pweb/page/skincare.html">Skincare</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-semibold text-xl mb-4">Contact Us</h3>
+            <ul>
+              <li class="mb-4">
+                <p>WhatsApp</p>
+              </li>
+              <li class="mb-4">
+                <p>Email</p>
+              </li>
+              <li class="mb-4">
+                <p>Phone</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
